@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origin Pure | Launching Soon</title>
+  <meta name="description" content="Follow @originpure.in and win a box of Premium Green Tea. Discover the pure essence of wellness." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Origin Pure | Launching Soon" />
+  <meta property="og:description" content="Follow @originpure.in and win a box of Premium Green Tea." />
+  <meta property="og:image" content="assets/hero-cup-isolated.png" />
+  <meta name="theme-color" content="#F7F5EF" />
+
+  <!-- Favicon: Origin Pure Logo (Instant Base64 Data URI + Cache-busted files) -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png?v=3" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=3" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=3" />
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =========================================================================
+       CSS RESETS & CORE SETUP
+    ========================================================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: #E6E2D6;
+      color: #1E2D2B;
+      font-family: 'Playfair Display', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        align-items: center;
+        padding: 40px 16px;
+      }
+    }
+
+    /* =========================================================================
+       9:16 RESPONSIVE CARD CONTAINER
+       Single vertical flex column with consistent natural flow spacing
+    ========================================================================= */
+    .launch-card {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      /* Pure CSS cream gradient background: top #FBFAF6 to bottom #F1EEE4 */
+      background: linear-gradient(180deg, #FBFAF6 0%, #F7F5EF 50%, #F1EEE4 100%);
+      display: flex;
+      flex-direction: column;
+      padding: 48px 24px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 640px) {
+      .launch-card {
+        min-height: auto;
+        border-radius: 28px;
+        box-shadow: 0 25px 60px -15px rgba(31, 66, 16, 0.18), 0 0 0 1px rgba(107, 138, 90, 0.15);
+      }
+    }
+
+    /* =========================================================================
+       BACKGROUND LAYER (Pure CSS & Inline SVG - NO SCREENSHOT IMAGES)
+       z-index: 0
+    ========================================================================= */
+    .background-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    /* Sunlight Streaks */
+    .sunlight-streak {
+      position: absolute;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 65%);
+      opacity: 0.35;
+      filter: blur(30px);
+      transform: rotate(-20deg);
+    }
+    .sunlight-streak-1 {
+      top: -10%;
+      left: -20%;
+      width: 140%;
+      height: 200px;
+    }
+    .sunlight-streak-2 {
+      top: 32%;
+      left: -25%;
+      width: 150%;
+      height: 220px;
+    }
+    .sunlight-streak-3 {
+      bottom: 8%;
+      left: -20%;
+      width: 140%;
+      height: 180px;
+    }
+
+    /* Corner Leaves Sway Animations: rotate +/-3deg, 9s ease-in-out infinite alternate */
+    @keyframes leafSwayA {
+      0% { transform: rotate(-3deg); }
+      100% { transform: rotate(3deg); }
+    }
+    @keyframes leafSwayB {
+      0% { transform: rotate(3deg); }
+      100% { transform: rotate(-3deg); }
+    }
+
+    .corner-leaf {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .corner-tl {
+      top: -35px;
+      left: -35px;
+      width: 210px;
+      height: 210px;
+      filter: blur(7px);
+      opacity: 0.85;
+      animation: leafSwayA 9s ease-in-out infinite alternate;
+      transform-origin: top left;
+    }
+
+    .corner-tr {
+      top: -35px;
+      right: -35px;
+      width: 210px;
+      height: 210px;
+      filter: blur(7px);
+      opacity: 0.85;
+      animation: leafSwayB 9s ease-in-out infinite alternate;
+      transform-origin: top right;
+    }
+
+    .corner-bl {
+      bottom: -40px;
+      left: -40px;
+      width: 220px;
+      height: 220px;
+      filter: blur(7px);
+      opacity: 0.85;
+      animation: leafSwayB 9s ease-in-out infinite alternate;
+      transform-origin: bottom left;
+    }
+
+    .corner-br {
+      bottom: -40px;
+      right: -40px;
+      width: 220px;
+      height: 220px;
+      filter: blur(7px);
+      opacity: 0.85;
+      animation: leafSwayA 9s ease-in-out infinite alternate;
+      transform-origin: bottom right;
+    }
+
+    /* =========================================================================
+       ALL CONTENT SITS AT z-index: 10 ABOVE BACKGROUND
+    ========================================================================= */
+    .content-block {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+    }
+
+    /* =========================================================================
+       1. LOGO SECTION
+    ========================================================================= */
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .logo-emblem {
+      display: block;
+      width: 140px;
+      height: auto;
+      margin: 0 auto 14px;
+      object-fit: contain;
+    }
+
+    .brand-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(26px, 7vw, 34px);
+      letter-spacing: 0.18em;
+      color: #2F5E1A;
+      margin: 0;
+      line-height: 1.1;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+    }
+
+    .brand-tm {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-left: 3px;
+      vertical-align: super;
+      color: #2F5E1A;
+    }
+
+    .brand-tagline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      color: #5B7A45;
+      margin: 14px 0 0 0;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* =========================================================================
+       2. HEADLINE BLOCK & ANCHORED SPROUT
+    ========================================================================= */
+    .headline-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .script-headline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: clamp(34px, 8.5vw, 42px);
+      color: #1E2D2B;
+      margin: 0;
+      line-height: 1.15;
+    }
+
+    .headline-divider {
+      width: 80px;
+      height: 1px;
+      background-color: #6B8A5A;
+      opacity: 0.6;
+      margin: 12px auto;
+    }
+
+    .we-are-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 400;
+      color: #1E2D2B;
+      margin: 0 0 4px 0;
+      line-height: 1.1;
+    }
+
+    .headline-wrap {
+      position: relative;
+      display: inline-block;
+      font-size: min(11.5vw, 56px);
+      margin: 2px 0 0 0;
+    }
+
+    .launch {
+      white-space: nowrap;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 800;
+      font-size: min(11.5vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0;
+      background: linear-gradient(180deg, #5E8F2A 0%, #1F4210 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .sprout {
+      position: absolute;
+      width: 0.55em;
+      height: 0.55em;
+      top: -0.32em;
+      right: 0.08em;
+      pointer-events: none;
+    }
+
+    .subline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(15px, 4.2vw, 19px);
+      text-wrap: balance;
+      max-width: 340px;
+      margin: 18px auto 0;
+      text-align: center;
+      color: #1E2D2B;
+      line-height: 1.35;
+    }
+
+    /* =========================================================================
+       3. HERO PRODUCT IMAGE
+    ========================================================================= */
+    .hero-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .hero-cup-wrapper {
+      position: relative;
+      width: 88%;
+      max-width: 380px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-cup-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      mask-image: radial-gradient(ellipse 65% 60% at 50% 52%, #000 55%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 65% 60% at 50% 52%, #000 55%, transparent 100%);
+      mix-blend-mode: multiply;
+      filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.10));
+    }
+
+    /* 3 Steam Wisps */
+    .steam-container {
+      position: absolute;
+      top: -18px;
+      left: 48%;
+      transform: translateX(-50%);
+      width: 90px;
+      height: 50px;
+      pointer-events: none;
+      z-index: 15;
+    }
+
+    .steam-wisp {
+      position: absolute;
+      bottom: 0;
+      width: 14px;
+      height: 38px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 75%);
+      filter: blur(4px);
+    }
+
+    .steam-wisp-1 {
+      left: 15px;
+      animation: steamRise 4s ease-out infinite 0s;
+    }
+    .steam-wisp-2 {
+      left: 38px;
+      animation: steamRise 4s ease-out infinite 1.3s;
+    }
+    .steam-wisp-3 {
+      left: 60px;
+      animation: steamRise 4s ease-out infinite 2.6s;
+    }
+
+    @keyframes steamRise {
+      0% { transform: translateY(0) scaleX(0.7); opacity: 0; }
+      40% { opacity: 0.6; }
+      75% { opacity: 0.25; transform: translateY(-20px) scaleX(1.1); }
+      100% { transform: translateY(-30px) scaleX(1.4); opacity: 0; }
+    }
+
+    /* =========================================================================
+       4. "HOW TO BE ELIGIBLE" SECTION
+       Heading flanked by 1px green lines, CSS grid 3 columns, 1px dividers,
+       80px circles, lucide icons (#1E3D1A, stroke 1.5), Cormorant text 19px.
+    ========================================================================= */
+    .eligible-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eligible-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .eligible-line {
+      flex: 1;
+      height: 1px;
+      background-color: #6B8A5A;
+      opacity: 0.6;
+    }
+
+    .eligible-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(20px, 5vw, 24px);
+      color: #1E2D2B;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .eligible-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+    }
+
+    .eligible-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0 8px;
+    }
+
+    .eligible-divider {
+      border-left: 1px solid rgba(107, 138, 90, 0.5);
+    }
+
+    .eligible-icon-circle {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      border-radius: 50%;
+      background: #DDE5CF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(47, 94, 26, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .eligible-icon-circle:hover {
+      transform: scale(1.05);
+    }
+
+    .eligible-icon {
+      width: 34px;
+      height: 34px;
+      color: #1E3D1A;
+    }
+
+    .eligible-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(14px, 3.6vw, 19px);
+      line-height: 1.3;
+      text-align: center;
+      color: #1E2D2B;
+      margin: 0;
+    }
+
+    /* =========================================================================
+       5. CTA BUTTON (EXACTLY ONE, IN NORMAL FLOW)
+       Margin-top: 32px, margin-bottom: 40px, pill shape, 90% width (max 380px),
+       gradient #2E5A14 to #1F4210, Playfair 22px, ChevronRight, pulse glow.
+    ========================================================================= */
+    .cta-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 90%;
+      max-width: 380px;
+      padding: 18px 40px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #2E5A14 0%, #1F4210 100%);
+      color: #FFFFFF;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(17px, 4.4vw, 22px);
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(31, 66, 16, 0.35);
+      animation: ctaPulseGlow 3.5s ease-in-out infinite;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(180deg, #376C18 0%, #244C13 100%);
+      box-shadow: 0 16px 36px rgba(31, 66, 16, 0.55);
+    }
+
+    .cta-button:active {
+      transform: translateY(0);
+    }
+
+    @keyframes ctaPulseGlow {
+      0%, 100% {
+        box-shadow: 0 10px 25px rgba(31, 66, 16, 0.35), 0 0 0 0 rgba(94, 143, 42, 0.4);
+      }
+      50% {
+        box-shadow: 0 14px 30px rgba(31, 66, 16, 0.45), 0 0 0 8px rgba(94, 143, 42, 0);
+      }
+    }
+
+    .cta-chevron {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2.5;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover .cta-chevron {
+      transform: translateX(3px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================================
+       9:16 MOBILE CARD FRAME
+  ========================================================================= -->
+  <main class="launch-card" role="main" aria-label="Origin Pure Green Tea Launch Teaser">
+
+    <!-- =========================================================================
+         BACKGROUND LAYER (PURE CSS SUNLIGHT STREAKS + INLINE SVG CORNER LEAVES)
+         Zero screenshot images. Zero ghost text.
+    ========================================================================= -->
+    <div class="background-layer" aria-hidden="true">
+      <!-- Sunlight streaks -->
+      <div class="sunlight-streak sunlight-streak-1"></div>
+      <div class="sunlight-streak sunlight-streak-2"></div>
+      <div class="sunlight-streak sunlight-streak-3"></div>
+
+      <!-- Top-Left Corner Leaf (Inline SVG with botanical green gradient & blur) -->
+      <div class="corner-leaf corner-tl">
+        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <defs>
+            <linearGradient id="leafGradTL1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5E8F2A" />
+              <stop offset="60%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#2F5E1A" />
+            </linearGradient>
+            <linearGradient id="leafGradTL2" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#72AF31" />
+              <stop offset="50%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#1F4210" />
+            </linearGradient>
+          </defs>
+          <!-- Main leaf 1 -->
+          <path d="M 0 0 C 40 20 90 70 115 130 C 80 120 30 75 0 0 Z" fill="url(#leafGradTL1)" opacity="0.95" />
+          <path d="M 0 0 Q 60 70 115 130" stroke="#7CB83E" stroke-width="1.8" opacity="0.4" />
+          <!-- Leaf 2 -->
+          <path d="M 15 -10 C 60 5 125 45 145 95 C 105 85 55 50 15 -10 Z" fill="url(#leafGradTL2)" opacity="0.9" />
+          <!-- Leaf 3 (small) -->
+          <path d="M -10 35 C 25 50 65 95 75 140 C 45 120 15 80 -10 35 Z" fill="url(#leafGradTL1)" opacity="0.85" />
+        </svg>
+      </div>
+
+      <!-- Top-Right Corner Leaf -->
+      <div class="corner-leaf corner-tr">
+        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <defs>
+            <linearGradient id="leafGradTR1" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#629A2B" />
+              <stop offset="55%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#2F5E1A" />
+            </linearGradient>
+            <linearGradient id="leafGradTR2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#80BE35" />
+              <stop offset="60%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#1F4210" />
+            </linearGradient>
+          </defs>
+          <!-- Main leaf 1 -->
+          <path d="M 160 0 C 120 20 70 70 45 130 C 80 120 130 75 160 0 Z" fill="url(#leafGradTR1)" opacity="0.95" />
+          <path d="M 160 0 Q 100 70 45 130" stroke="#89C942" stroke-width="1.8" opacity="0.4" />
+          <!-- Leaf 2 -->
+          <path d="M 145 -10 C 100 5 35 45 15 95 C 55 85 105 50 145 -10 Z" fill="url(#leafGradTR2)" opacity="0.9" />
+          <!-- Leaf 3 -->
+          <path d="M 170 35 C 135 50 95 95 85 140 C 115 120 145 80 170 35 Z" fill="url(#leafGradTR1)" opacity="0.85" />
+        </svg>
+      </div>
+
+      <!-- Bottom-Left Corner Leaf -->
+      <div class="corner-leaf corner-bl">
+        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <defs>
+            <linearGradient id="leafGradBL1" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1F4210" />
+              <stop offset="50%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#5E8F2A" />
+            </linearGradient>
+            <linearGradient id="leafGradBL2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2F5E1A" />
+              <stop offset="60%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#76B533" />
+            </linearGradient>
+          </defs>
+          <path d="M 0 160 C 40 140 90 90 115 30 C 80 40 30 85 0 160 Z" fill="url(#leafGradBL1)" opacity="0.95" />
+          <path d="M 0 160 Q 60 90 115 30" stroke="#7CB83E" stroke-width="1.8" opacity="0.35" />
+          <path d="M 15 170 C 60 155 125 115 145 65 C 105 75 55 110 15 170 Z" fill="url(#leafGradBL2)" opacity="0.9" />
+        </svg>
+      </div>
+
+      <!-- Bottom-Right Corner Leaf -->
+      <div class="corner-leaf corner-br">
+        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+          <defs>
+            <linearGradient id="leafGradBR1" x1="100%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#1F4210" />
+              <stop offset="50%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#629A2B" />
+            </linearGradient>
+            <linearGradient id="leafGradBR2" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#2F5E1A" />
+              <stop offset="60%" stop-color="#4E7F2A" />
+              <stop offset="100%" stop-color="#7AB935" />
+            </linearGradient>
+          </defs>
+          <path d="M 160 160 C 120 140 70 90 45 30 C 80 40 130 85 160 160 Z" fill="url(#leafGradBR1)" opacity="0.95" />
+          <path d="M 160 160 Q 100 90 45 30" stroke="#89C942" stroke-width="1.8" opacity="0.35" />
+          <path d="M 145 170 C 100 155 35 115 15 65 C 55 75 105 110 145 170 Z" fill="url(#leafGradBR2)" opacity="0.9" />
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- =========================================================================
+         SECTION 1: LOGO (z-index: 10)
+    ========================================================================= -->
+    <header class="content-block logo-section">
+      <img class="logo-emblem" src="logo-emblem.png" alt="Origin Pure emblem">
+
+      <h1 class="brand-title">
+        ORIGIN PURE<sup class="brand-tm">TM</sup>
+      </h1>
+
+      <p class="brand-tagline">
+        WELLNESS &amp; NATURAL
+      </p>
+    </header>
+
+
+    <!-- =========================================================================
+         SECTION 2: HEADLINE BLOCK (z-index: 10)
+    ========================================================================= -->
+    <section class="content-block headline-section">
+      <h2 class="script-headline">Hey Green Tea Lovers</h2>
+
+      <div class="headline-divider"></div>
+
+      <p class="we-are-text">We Are</p>
+
+      <div class="headline-wrap">
+        <h1 class="launch">Launching Soon</h1>
+        <svg class="sprout" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="sproutGradL" x1="0%" y1="100%" x2="50%" y2="0%">
+              <stop offset="0%" stop-color="#2F5E1A" />
+              <stop offset="100%" stop-color="#72AF31" />
+            </linearGradient>
+            <linearGradient id="sproutGradR" x1="100%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1F4210" />
+              <stop offset="100%" stop-color="#88C73B" />
+            </linearGradient>
+          </defs>
+          <!-- Stem -->
+          <path d="M18 34 C 18 25, 17 19, 15 15" stroke="#2F5E1A" stroke-width="2.4" stroke-linecap="round" />
+          <!-- Left Leaf -->
+          <path d="M15 16 C 8 15, 2 10, 4 3 C 11 3, 15 10, 15 16 Z" fill="url(#sproutGradL)" />
+          <path d="M15 16 C 12 11, 9 7, 5 4" stroke="#9FD955" stroke-width="0.8" stroke-linecap="round" />
+          <!-- Right Leaf -->
+          <path d="M16 15 C 18 9, 26 3, 34 4 C 33 12, 24 17, 16 15 Z" fill="url(#sproutGradR)" />
+          <path d="M16 15 C 22 12, 28 8, 32 5" stroke="#B2E76C" stroke-width="0.8" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <p class="subline">
+        Follow our page &amp; win a box of Premium Green Tea
+      </p>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 3: HERO PRODUCT IMAGE (z-index: 10)
+         Transparent teacup (cup, coaster, leaf, tag), ~85% width,
+         soft drop shadow, radial mask fading edges, mix-blend-mode: multiply,
+         3 rising steam wisps, 24px margins.
+    ========================================================================= -->
+    <section class="content-block hero-section">
+      <div class="hero-cup-wrapper">
+        <!-- 3 Blurred White Steam Wisps Rising & Fading -->
+        <div class="steam-container" aria-hidden="true">
+          <div class="steam-wisp steam-wisp-1"></div>
+          <div class="steam-wisp steam-wisp-2"></div>
+          <div class="steam-wisp steam-wisp-3"></div>
+        </div>
+
+        <!-- Teacup Product Shot -->
+        <img src="assets/hero-cup-isolated.png" 
+             alt="Origin Pure Premium Green Tea brewed in a transparent glass cup on stone coaster" 
+             class="hero-cup-img" />
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 4: "HOW TO BE ELIGIBLE" (z-index: 10)
+         Heading flanked by 1px green lines. CSS Grid 3 equal columns with thin
+         vertical dividers. 80px sage circles (#DDE5CF) + dark green icons + live text below.
+    ========================================================================= -->
+    <section class="content-block eligible-section">
+      <!-- Heading flanked by 1px lines -->
+      <div class="eligible-header">
+        <span class="eligible-line"></span>
+        <h4 class="eligible-title">How to be eligible</h4>
+        <span class="eligible-line"></span>
+      </div>
+
+      <!-- 3-Column Grid -->
+      <div class="eligible-grid">
+        <!-- Column 1: Follow -->
+        <div class="eligible-col">
+          <div class="eligible-icon-circle">
+            <!-- UserPlus Lucide icon -->
+            <svg class="eligible-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <line x1="19" y1="8" x2="19" y2="14" />
+              <line x1="22" y1="11" x2="16" y2="11" />
+            </svg>
+          </div>
+          <p class="eligible-text">
+            Follow us<br />@originpure.in
+          </p>
+        </div>
+
+        <!-- Column 2: Watch -->
+        <div class="eligible-col eligible-divider">
+          <div class="eligible-icon-circle">
+            <!-- Eye Lucide icon -->
+            <svg class="eligible-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <p class="eligible-text">
+            Watch our page closely for the launch announcement
+          </p>
+        </div>
+
+        <!-- Column 3: Participate -->
+        <div class="eligible-col eligible-divider">
+          <div class="eligible-icon-circle">
+            <!-- FileText Lucide icon -->
+            <svg class="eligible-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <line x1="10" y1="9" x2="8" y2="9" />
+            </svg>
+          </div>
+          <p class="eligible-text">
+            Participate as per the instructions in the launch post
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 5: CTA BUTTON (EXACTLY ONE, IN NORMAL FLOW)
+         Margin-top: 32px, margin-bottom: 40px, pill shape, width 90% (max 380px),
+         gradient #2E5A14 to #1F4210, Playfair 22px, ChevronRight, subtle pulse glow.
+    ========================================================================= -->
+    <footer class="content-block cta-section">
+      <a href="https://instagram.com/originpure.in" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="cta-button"
+         aria-label="Follow Origin Pure on Instagram at originpure.in">
+        <span>Follow us @originpure.in</span>
+        <svg class="cta-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+    </footer>
+
+  </main>
+
+</body>
+</html>
