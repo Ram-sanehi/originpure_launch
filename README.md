@@ -1,106 +1,98 @@
-# ORIGIN PURE - Launch Teaser Landing Page
+# ORIGIN PURE ™ — Redesigned Launching Soon Page
 
-A mobile-first, pixel-faithful "Coming Soon / Launch Teaser" landing page for **ORIGIN PURE** premium green tea brand.
-
----
-
-## 🍵 Features & Aesthetics
-
-- **Portrait Canvas**: 9:16 aspect ratio (design width 900px, height 1600px), centered with `max-width: 480px` on desktop and full responsive presentation on mobile devices.
-- **Natural Wellness Background**:
-  - Warm cream background (`#F7F5EF`) with subtle gradients.
-  - Soft sunlight window-shadow beams across the background.
-  - Light marble tabletop surface at the bottom half.
-  - Organic blurred green tea leaves in all four corners with gentle swaying CSS animations (depth-of-field effect).
-- **Pixel-Faithful Typography**:
-  - Script heading: *"Hey Green Tea Lovers"* (Cormorant Garamond italic script).
-  - Serif subheading: *"We Are"* followed by *"Launching Soon"* in bold gradient green with a two-leaf sprout on top of the "n".
-  - Subline: *"Follow our page & win a box of Premium Green Tea"*.
-  - Eligibility header: *── How to be eligible ──*.
-- **Hero Product Presentation**:
-  - Transparent glass tea cup with golden-green tea on a stone coaster.
-  - Realistic rising and fading tea steam animation.
-- **3-Step Eligibility Section**:
-  - Pale sage circles (`#DDE5CF`) with thin-line dark green icons.
-  - 1: User Plus → Follow us @originpure.in
-  - 2: Eye → Watch our page closely for the launch announcement
-  - 3: Document → Participate as per the instructions in the launch post
-- **CTA Button**:
-  - Pill-shaped gradient green button with gentle pulsing glow and hover lift.
-  - Direct link to `https://instagram.com/originpure.in`.
+A modern, high-end, and memorable "Launching Soon" landing page for **ORIGIN PURE** premium green tea brand (tagline: *"Wellness & Natural"*).
 
 ---
 
-## 📁 File Structure
+## ✨ What Has Changed & Redesign Highlights
 
+1. **Official Green Ripple Emblem (`assets/logo-emblem.png`, `logo.svg`)**:
+   - Integrated the client's official concentric tea ripple / vortex emblem mark.
+   - Sized at an optimal optical scale (`110px × 110px`) with natural drop-shadow on light cream and a soft luminous glow in dark midnight mode.
+   - Sourced from the lossless 400×400 master transparent asset and synced across `index.html`, `OriginPureLanding.jsx`, and `logo.svg`.
+
+2. **Refined Typography Pairing**:
+   - **Headline Only**: *Playfair Display* (display serif) for editorial prestige.
+   - **All Other Elements**: *Plus Jakarta Sans* (modern, geometric sans-serif) for the brand mark, eyebrow pill, sub-text, step cards, and CTA button.
+   - Clear visual hierarchy with generous breathing room and superior legibility on mobile viewports.
+
+3. **Fresh, Premium Wellness Aesthetic**:
+   - Deep forest green (`#0D2B1D`), warm alabaster cream (`#FCFBF7` to `#F1ECE0`), brushed gold accents (`#C59E47`), and delicate matcha undertones.
+   - Soft sunlight beams, floating organic corner leaves with gentle depth-of-field sway, and subtle card glassmorphism.
+
+4. **Interactive 3-Step Eligibility Section**:
+   - Numbered badges (`01`, `02`, `03`) with custom clean line icons (Follow, Watch, Checklist).
+   - Touch-friendly glassmorphism cards with smooth hover lift and gold-border highlights.
+
+5. **Hero Product Presentation**:
+   - Floating glass teacup on stone coaster with rising animated steam wisps.
+   - Synchronized dynamic ground shadow that scales realistically as the cup floats.
+
+6. **High-Contrast Instagram CTA**:
+   - Prominent pill-shaped button featuring the official Instagram SVG glyph, smooth hover lift, shine sweep effect, and a subtle glowing aura.
+
+7. **3 Switchable Luxury Color Palettes**:
+   - **Palette 1 (Default - Forest & Gold Cream)**: Deep forest green + warm cream + brushed gold.
+   - **Palette 2 (Option A - Kyoto Matcha & Oat)**: Fresh matcha green + soft oat celadon + vibrant shoot accents.
+   - **Palette 3 (Option B - Midnight Pine & Radiant Gold)**: Dark luxury obsidian pine + radiant gold + ivory typography.
+
+---
+
+## 🎨 How to Switch Between Color Palettes
+
+### 1. Interactive Preview
+Open `index.html` in any browser. Use the chic floating switcher pill in the top-right corner to toggle between **Forest**, **Matcha**, and **Midnight** in real-time.
+
+### 2. Lock In a Palette Permanently in Code
+In `index.html`, set the `data-theme` attribute on the `<html>` tag:
+```html
+<!-- Default: Forest & Gold Cream -->
+<html lang="en" data-theme="forest">
+
+<!-- Alternate Option A: Kyoto Matcha & Fresh Oat -->
+<html lang="en" data-theme="matcha">
+
+<!-- Alternate Option B: Midnight Botanical & Radiant Gold (Dark Luxury) -->
+<html lang="en" data-theme="midnight">
 ```
-foxgle_originoure/
-├── index.html                  # Complete standalone, single-file HTML/CSS/JS page
-├── OriginPureLanding.jsx       # Reusable React component with props & Tailwind
-├── README.md                   # Documentation and asset swap instructions
-└── assets/                     # Extracted high-fidelity assets
-    ├── logo-emblem-transparent.png
-    ├── logo-emblem.png
-    ├── logo-full.png
-    ├── hero-cup-blended.png
-    ├── hero-cup.png
-    ├── sprout.png
-    ├── leaf-top-left-trans.png
-    ├── leaf-top-right-trans.png
-    ├── leaf-mid-left-trans.png
-    ├── leaf-bottom-left-trans.png
-    └── leaf-bottom-right-trans.png
-```
 
 ---
 
-## 🚀 Quick Start
+## 🔄 Where to Swap Assets & Links
 
-### 1. Standalone HTML (Zero Build Tools Required)
-Simply double-click `index.html` or open it in any web browser!
-Or run a local server:
+### 1. Hero Teacup Product Image
+In `index.html`, locate the comment:
+```html
+<!-- [SWAP HERO IMAGE HERE]: Replace src with client's teacup file -->
+<img 
+  src="assets/hero-cup-isolated.png" 
+  alt="Origin Pure Premium Green Tea steeped in clear glass cup" 
+  class="hero-teacup-img"
+/>
+```
+
+### 2. Instagram Profile Link
+In `index.html`, locate the comment:
+```html
+<!-- [SWAP INSTAGRAM LINK HERE]: Update href to your official URL -->
+<a 
+  href="https://instagram.com/originpure.in" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  class="cta-button"
+>
+```
+
+### 3. Logo Mark
+The vector logo is available separately as `logo.svg` and `assets/logo.svg`. It is also embedded directly inside the brand header in `index.html` for zero-latency instant rendering.
+
+---
+
+## 🚀 Quick Run
+
+### Standalone HTML (Zero Dependencies)
+Simply open `index.html` in your browser or run:
 ```bash
 python3 -m http.server 3000
 ```
-Open `http://localhost:3000` in your browser.
-
-### 2. React + Tailwind CSS
-Import `OriginPureLanding.jsx` into your React project (Next.js, Vite, Create React App):
-```jsx
-import OriginPureLanding from './OriginPureLanding';
-
-export default function App() {
-  return <OriginPureLanding />;
-}
-```
-
----
-
-## 🎨 Asset Swap Configuration
-
-To swap any asset with the client's final media files, edit the `BRAND_ASSETS` object in `index.html` (or `DEFAULT_ASSETS` in `OriginPureLanding.jsx`):
-
-```javascript
-const BRAND_ASSETS = {
-  // 1. Logo Emblem (Circular brush stroke ring)
-  logo: "assets/logo-emblem-transparent.png",
-
-  // 2. Hero Green Tea Cup Product Shot
-  heroCup: "assets/hero-cup-blended.png",
-
-  // 3. Sprout on the "n" of Launching Soon
-  sprout: "assets/sprout.png",
-
-  // 4. Corner Depth-of-Field Green Leaves
-  leaves: {
-    topLeft: "assets/leaf-top-left-trans.png",
-    topRight: "assets/leaf-top-right-trans.png",
-    midLeft: "assets/leaf-mid-left-trans.png",
-    bottomLeft: "assets/leaf-bottom-left-trans.png",
-    bottomRight: "assets/leaf-bottom-right-trans.png"
-  },
-
-  // 5. Social Link
-  instagramUrl: "https://instagram.com/originpure.in"
-};
-```
+Visit `http://localhost:3000`.
